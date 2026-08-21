@@ -340,6 +340,23 @@ def verify_solver_consequences() -> None:
     check(len(refs) == 4 and not refs.cg_applicable.astype(bool).any() and
           len(exact) == 7 and exact.cg_applicable.astype(bool).all(),
           'solver availability table reconciles with report')
+    guarantees = pd.read_csv(d/'solver_guarantees_table.csv')
+    check(len(guarantees) == 5 and guarantees.iloc[0].operator_group == 'Exact constructions (7)',
+          'solver-guarantees aggregate table has exact group plus four references')
+    exact_row = guarantees.iloc[0]
+    check(bool(exact_row.cg_applicable) and int(exact_row.operators) == 7 and
+          float(exact_row.symmetry_residual_max) <= 1.24e-16 and
+          abs(float(exact_row.min_eigenvalue_min) - 0.049348022) < 1e-6 and
+          9e-9 < float(exact_row.original_solution_error_min) < 1e-8 and
+          5.8e-6 < float(exact_row.original_solution_error_max) < 6.0e-6,
+          'exact-construction aggregate in solver-guarantees table')
+    k6g = guarantees[guarantees.operator_group == 'MOLE/CC order 6'].iloc[0]
+    k8g = guarantees[guarantees.operator_group == 'MOLE/CC order 8'].iloc[0]
+    check(abs(float(k6g.original_solution_error_min) - 1.002510282683709e-09) < 2e-11 and
+          abs(float(k6g.symmetric_part_solution_error_min) - 0.2783656) < 1e-5 and
+          abs(float(k8g.original_solution_error_min) - 6.149971e-12) < 1e-12 and
+          abs(float(k8g.symmetric_part_solution_error_min) - 0.3687853) < 1e-5,
+          'reference rows in solver-guarantees table')
     heat = pd.read_csv(tables/'implicit_heat_step.csv')
     k8_heat = heat[heat.operator.str.contains('reference_mole_k8')].iloc[0]
     check(not bool(k8_heat['symmetric_part_is_spd']) and not bool(k8_heat['cg_applicable']),
@@ -367,6 +384,13 @@ def verify_solver_consequences() -> None:
           float(comparison[comparison.quantity == 'diagnostic_cg_solution_error']['absolute_difference'].max()) < 1e-9,
           'user and authoritative solver outputs agree on claim-bearing values')
 
+
+
+def verify_repository_scope() -> None:
+    check(not (ROOT / 'paper').exists(),
+          'journal manuscript source excluded from GitHub repository')
+    check(not (ROOT / 'LICENSE-PAPER-CC-BY-4.0.txt').exists(),
+          'paper-specific licence excluded from GitHub repository')
 
 
 def verify_reference_attribution() -> None:
@@ -432,6 +456,7 @@ def main() -> None:
     verify_claim_counts()
     verify_reviewer_audits()
     verify_followup_audits()
+    verify_repository_scope()
     verify_downstream_analysis()
     verify_solver_consequences()
     verify_reference_attribution()

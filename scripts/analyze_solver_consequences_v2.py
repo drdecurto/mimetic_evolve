@@ -471,6 +471,42 @@ def main() -> None:
     ]
     pd.DataFrame(headline_rows).to_csv(output / "headline_solver_consequences.csv", index=False)
 
+    # Compact, manuscript-facing summary.  The exact-construction row aggregates
+    # the four primary and three follow-up certificates; reference rows remain
+    # individual so that the availability boundary is visible by order.
+    guarantee_rows: list[dict[str, Any]] = [{
+        "operator_group": "Exact constructions (7)",
+        "operators": int(len(released_exact)),
+        "symmetry_residual_max": float(released_exact.symmetry_residual.max()),
+        "min_eigenvalue_min": float(released_exact.min_eigenvalue_symmetric_part.min()),
+        "cg_applicable": bool(released_exact.cg_applicable.all()),
+        "original_solution_error_min": float(released_exact.direct_original_solution_error.min()),
+        "original_solution_error_max": float(released_exact.direct_original_solution_error.max()),
+        "symmetric_part_solution_error_min": float(
+            released_exact.cg_symmetric_part_diagnostic_solution_error.min()
+        ),
+        "symmetric_part_solution_error_max": float(
+            released_exact.cg_symmetric_part_diagnostic_solution_error.max()
+        ),
+    }]
+    for row in references.sort_values("target_order").itertuples():
+        guarantee_rows.append({
+            "operator_group": f"MOLE/CC order {int(row.target_order)}",
+            "operators": 1,
+            "symmetry_residual_max": float(row.symmetry_residual),
+            "min_eigenvalue_min": float(row.min_eigenvalue_symmetric_part),
+            "cg_applicable": bool(row.cg_applicable),
+            "original_solution_error_min": float(row.direct_original_solution_error),
+            "original_solution_error_max": float(row.direct_original_solution_error),
+            "symmetric_part_solution_error_min": float(
+                row.cg_symmetric_part_diagnostic_solution_error
+            ),
+            "symmetric_part_solution_error_max": float(
+                row.cg_symmetric_part_diagnostic_solution_error
+            ),
+        })
+    pd.DataFrame(guarantee_rows).to_csv(output / "solver_guarantees_table.csv", index=False)
+
     # Compare claim-bearing values against the immutable user notebook outputs.
     user_archive = root / "runs" / "mimetic_solver_v2_user_results.zip"
     comparison_rows: list[dict[str, Any]] = []
@@ -513,7 +549,7 @@ The analysis tests availability of a symmetric positive-definite weighted system
 
 The negative minimum eigenvalues of the symmetric parts for the order-six and order-eight references are the same quadratic-form obstruction measured by the positive logarithmic energy rates in `derived/downstream_analysis_v3`; they are not independent evidence.
 
-Authoritative headline values are collected in `headline_solver_consequences.csv`. The original user-supplied notebook and its outputs are preserved separately under `notebooks/`, `runs/`, and `source_artifacts/` for provenance.
+Authoritative headline values are collected in `headline_solver_consequences.csv`; `solver_guarantees_table.csv` is the compact source for the manuscript table. The original user-supplied notebook and its outputs are preserved separately under `notebooks/`, `runs/`, and `source_artifacts/` for provenance.
 """
     (output / "README.md").write_text(readme, encoding="utf-8")
 

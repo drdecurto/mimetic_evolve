@@ -88,6 +88,8 @@ The solver experiment is downstream of discovery and does not enter candidate se
 | GMRES on the original order-six reference returns relative solution error about `1.0e-9` | same |
 | The same SPD-availability distinction occurs for backward Euler with `dt/h^2 = 5` | `derived/solver_consequences_v2/tables/implicit_heat_step.csv` |
 
+The compact source used for the manuscript solver-guarantees table is `derived/solver_consequences_v2/solver_guarantees_table.csv`.
+
 The forced-CG calculation solves a different, symmetrized system and is used only to interpret the residual. It is not a recommended solver and is not evidence that the nonsymmetric reference is unsolvable or slower. The negative eigenvalue and the positive logarithmic energy rate reported in the downstream analysis are two views of the same quadratic-form obstruction.
 
 ## Validity qualifications

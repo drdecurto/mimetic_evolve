@@ -11,6 +11,15 @@ spectral/PDE verifier, and a coupled exact rational reconstruction decide what s
 Everything here is recomputable from the archived runs. No API key and no new model calls are
 needed to reproduce any reported number.
 
+## Repository scope
+
+This GitHub repository contains the code, notebooks, immutable run archives, derived data, exact
+certificates, and reproducibility documentation. The journal manuscript and its submission source
+are distributed separately and are intentionally not committed here.
+
+The compact linear-algebra summary used by the article is generated from
+`derived/solver_consequences_v2/solver_guarantees_table.csv`.
+
 ## What the search found
 
 Four order-six block-norm constructions — one from each archive condition — were independently
@@ -131,7 +140,7 @@ that is not valid evidence about search policy.
 │   ├── analyze_downstream_v3.py             Energy, time-stepping, novelty diagnostics
 │   ├── analyze_solver_consequences_v2.py    Weighted-system and solver diagnostics
 │   ├── compare_derived.py                   Diffs a recomputation against the shipped outputs
-│   └── verify_release.py                    Integrity, claim-count, and secret audit
+│   └── verify_release.py                    Integrity, claim-count, provenance, and secret audit
 ├── docs/          Provenance, limitations, run ledger, and audit notes
 ├── source_artifacts/  Superseded exploratory bundles, preserved for provenance
 └── Makefile
@@ -164,6 +173,7 @@ Start here to understand what was measured:
    interpreting any historical reference label inside the archives.
 4. `docs/LIMITATIONS.md` and `docs/V12_V12_1_FOLLOWUP_AUDIT.md` — read before using any
    later-run number.
+5. `docs/REPRODUCIBILITY.md` — complete offline reconstruction protocol.
 
 ## Re-run the live campaign
 
@@ -188,9 +198,8 @@ Pinned versions are in `requirements.txt` and `environment.yml`.
 ## Licence
 
 The notebooks and numerical code contain Python translations of MOLE operator-generation
-routines, and are distributed under **GPL-3.0-or-later**. Documentation, derived tables and
-independently generated figures are distributed under **CC BY 4.0**. See `NOTICE.md` for the
-boundary between them.
+routines, and are distributed under **GPL-3.0-or-later**. Documentation, derived tables, and independently generated figures are distributed under
+**CC BY 4.0**. See `NOTICE.md` for the boundary between code, data, and documentation.
 
 ## Citation
 

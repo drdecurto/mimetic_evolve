@@ -6,4 +6,4 @@ The analysis tests availability of a symmetric positive-definite weighted system
 
 The negative minimum eigenvalues of the symmetric parts for the order-six and order-eight references are the same quadratic-form obstruction measured by the positive logarithmic energy rates in `derived/downstream_analysis_v3`; they are not independent evidence.
 
-Authoritative headline values are collected in `headline_solver_consequences.csv`. The original user-supplied notebook and its outputs are preserved separately under `notebooks/`, `runs/`, and `source_artifacts/` for provenance.
+Authoritative headline values are collected in `headline_solver_consequences.csv`; `solver_guarantees_table.csv` is the compact source for the manuscript table. The original user-supplied notebook and its outputs are preserved separately under `notebooks/`, `runs/`, and `source_artifacts/` for provenance.

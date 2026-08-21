@@ -37,6 +37,7 @@ downstream-analysis:
 solver-analysis:
 	$(PYTHON) scripts/analyze_solver_consequences_v2.py --root .
 
+
 verify:
 	$(PYTHON) scripts/verify_release.py
 
