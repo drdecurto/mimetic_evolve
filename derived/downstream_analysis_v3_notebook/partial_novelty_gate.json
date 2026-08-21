@@ -1,0 +1,33 @@
+{
+  "screen_version": "v3.1_robust_partial",
+  "screening_methods": [
+    "corner_blocks_scale_sign_reflection",
+    "fixed_length_singular_value_fingerprint"
+  ],
+  "family_status": {
+    "castillo_grone": "compared",
+    "corbino_castillo": "outstanding",
+    "strand": "outstanding",
+    "mattsson_nordstrom": "outstanding",
+    "generalized_sbp_block_norm": "outstanding"
+  },
+  "library_families_loaded": [
+    "castillo_grone_k2",
+    "castillo_grone_k4",
+    "castillo_grone_k6",
+    "castillo_grone_k8"
+  ],
+  "documented_not_directly_comparable": {},
+  "required_families_outstanding": [
+    "corbino_castillo",
+    "strand",
+    "mattsson_nordstrom",
+    "generalized_sbp_block_norm"
+  ],
+  "library_complete": false,
+  "all_fingerprint_distances_finite": true,
+  "any_direct_match": false,
+  "any_same_order_fingerprint_near_match": false,
+  "novelty_claim_supported": false,
+  "interpretation": "No match is found among the loaded Castillo-Grone references. Corbino-Castillo and topology-aware SBP/block-norm comparisons remain outstanding, so literature-level novelty is not established."
+}

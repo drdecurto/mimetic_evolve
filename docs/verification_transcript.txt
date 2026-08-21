@@ -1,0 +1,113 @@
+PASS immutable v11 run archive present
+PASS v11 ZIP CRC integrity
+PASS v11 internal manifest hashes verified (1162 files)
+PASS archived secret scan
+PASS v12_failed_results.zip present
+PASS v12_failed_results.zip ZIP CRC integrity
+PASS v12_failed_results.zip internal manifest hashes verified (726 files)
+PASS v12_failed_results.zip archived secret scan
+PASS v12_1_followup_results.zip present
+PASS v12_1_followup_results.zip ZIP CRC integrity
+PASS v12_1_followup_results.zip internal manifest hashes verified (1209 files)
+PASS v12_1_followup_results.zip archived secret scan
+PASS llm_full_metrics solver calls
+PASS llm_full_metrics external passes
+PASS llm_illumination solver calls
+PASS llm_illumination external passes
+PASS heuristic solver calls
+PASS heuristic external passes
+PASS llm_structure_only solver calls
+PASS llm_structure_only external passes
+PASS surrogate solver calls
+PASS surrogate external passes
+PASS llm_no_archive solver calls
+PASS llm_no_archive external passes
+PASS uniform_random solver calls
+PASS uniform_random external passes
+PASS 1,200 total solver calls
+PASS one exact candidate per LLM condition
+PASS exact certificate pass: structure_only_prog_k6_block_psd_reflection_min_next_moment_973378905933.json
+PASS exact certificate pass: illumination_prog_k6_block_psd_reflection_hybrid_ec036e6713a0.json
+PASS exact certificate pass: no_archive_prog_k6_block_psd_asymmetric_hybrid_f8ec01d38203.json
+PASS exact certificate pass: full_metrics_prog_k6_block_psd_reflection_hybrid_46eceb97ab23.json
+PASS endpoint containment audit
+PASS uniform-random endpoint reconciliation
+PASS full-metrics endpoint reconciliation
+PASS external refinement audit counts
+PASS external refinement Fisher p
+PASS notebook-gate refinement audit
+PASS infeasibility binding-group audit
+PASS ten distinct expert-prior sequences
+PASS constant 12/24 expert-prior external yield
+PASS reference late convergence marked round-off limited
+PASS v12 provider-transport and parser-failure audit
+PASS v12 incomplete-arm audit
+PASS v12 exact diagonal candidate audit
+PASS v12.1 transport audit
+PASS v12.1 prediction coverage
+PASS v12.1 completion, diversity, duplicate, and schedule audit
+PASS v12.1 2x2 count: cold
+PASS v12.1 2x2 count: diagnostic_only
+PASS v12.1 2x2 count: archive_only
+PASS v12.1 2x2 count: full_feedback
+PASS v12.1 missing-as-failure sensitivity: cold
+PASS v12.1 missing-as-failure sensitivity: diagnostic_only
+PASS v12.1 missing-as-failure sensitivity: archive_only
+PASS v12.1 missing-as-failure sensitivity: full_feedback
+PASS v12.1 missing-as-failure sensitivity: two_stage
+PASS v12.1 least-favourable Fisher sensitivity
+PASS v12.1 transport-versus-diversity health audit
+PASS v12.1 two-stage transition
+PASS v12.1 completion stratum present: archive_only/False
+PASS v12.1 completion stratum present: archive_only/True
+PASS v12.1 completion stratum present: full_feedback/False
+PASS v12.1 completion stratum present: full_feedback/True
+PASS v12.1 completion stratum present: two_stage/False
+PASS v12.1 completion stratum present: two_stage/True
+PASS v12.1 completion-stratified outcome audit
+PASS v12.1 two-stage selective-completion audit
+PASS v12.1 exact cold candidate audit
+PASS v12.1 self-declared versus external gate-gap audit
+PASS follow-up exact certificate pass: v12_diagonal_prog_k6_diagonal_asymmetric_hybrid_5e80ffe4c774.json
+PASS follow-up exact certificate pass: v12_1_random_prog_k6_block_psd_reflection_min_next_moment_298eeaa4221c.json
+PASS follow-up exact certificate pass: v12_1_cold_prog_k6_block_psd_asymmetric_min_next_moment_8a3f6d67a915.json
+PASS exact candidate is Q-contractive
+PASS order-six native-Q relative energy rate
+PASS order-six transient Q-energy amplification
+PASS weighted-symmetry residual contrast
+PASS common RK4 stability limit
+PASS exploratory energy outputs are explicitly marked superseded
+PASS partial novelty screen does not overclaim
+PASS topology-scoped novelty screen is finite and remains claim-blocking
+PASS all novelty fingerprint distances are finite
+PASS no direct match among loaded novelty references
+PASS quantified same-order loaded-library separation
+PASS amended downstream analysis source artifact preserved
+PASS solver-consequence operator inventory
+PASS CG availability follows certified weighted symmetry
+PASS explicitly scoped exact-operator weighted-symmetry residuals
+PASS order-six reference weighted-symmetry obstruction
+PASS order-six diagnostic CG and original-system accuracy
+PASS exact-candidate symmetric-part diagnostic remains at discretization level
+PASS backward-Euler weighted-system availability
+PASS authoritative solver tables present
+PASS solver availability table reconciles with report
+PASS order-eight reference backward-Euler symmetric part is not SPD
+PASS solver figure and interpretation document present
+PASS user-supplied solver analysis source artifact preserved
+PASS user solver notebook preserved
+PASS user solver result archive preserved
+PASS user solver source ZIP CRC integrity
+PASS user solver result ZIP CRC integrity
+PASS user and authoritative solver outputs agree on claim-bearing values
+PASS MOLE source attribution and candidate proposition-condition audit
+PASS archived reference blocks match pinned MOLE v1.2.0 source
+PASS Corbino-Castillo complex modes coexist with a non-vanishing closure boundary term
+PASS promoted candidates satisfy corrected Dirichlet-symmetry proposition conditions
+PASS pinned MOLE source snapshot present
+PASS reference-attribution correction documented
+PASS regenerated derived tables use corrected MOLE/Corbino-Castillo labels
+PASS no credential-shaped secrets ([])
+PASS package manifest hashes verified (159 files)
+
+RELEASE AUDIT: PASS

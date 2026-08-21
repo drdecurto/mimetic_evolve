@@ -1,0 +1,6 @@
+archive_condition,solver_calls,predictions_supplied,prediction_coverage
+cold,120,117,0.975
+archive_only,107,107,1.0
+diagnostic_only,120,120,1.0
+full_feedback,114,114,1.0
+two_stage,111,111,1.0

@@ -1,0 +1,10 @@
+quantity,value,units
+released_exact_constructions,7.0,operators
+released_exact_cg_applicable,7.0,operators
+reference_cg_applicable_native_quadrature,0.0,operators
+order6_reference_weighted_symmetry_residual,0.522351240707882,relative
+order6_reference_min_symmetric_part_eigenvalue,-26.000484784797088,matrix units
+order6_reference_diagnostic_cg_solution_error,0.27836556195491635,relative
+order6_reference_direct_solution_error,1.002510282683709e-09,relative
+order6_reference_gmres_solution_error,1.0147343054966979e-09,relative
+order8_reference_diagnostic_cg_solution_error,0.3687853465724258,relative

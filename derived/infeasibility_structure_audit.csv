@@ -1,0 +1,6 @@
+binding_group,programs,share_of_group_diagnosed
+extended_gauss,637,0.9984326018808778
+gradient_boundary_moments,1,0.001567398119122257
+__group_diagnosed_total__,638,1.0
+__compile_failures_without_group__,13,
+__all_compile_failures__,651,

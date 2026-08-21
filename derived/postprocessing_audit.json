@@ -1,0 +1,44 @@
+{
+  "endpoint_containment": {
+    "both_fail": 809,
+    "both_pass": 249,
+    "external_only": 142,
+    "notebook_only": 0
+  },
+  "exact_candidates_per_archive_condition": 4,
+  "expert_prior_distinct_sequences": 10,
+  "expert_prior_external_passes_per_seed": 12,
+  "group_diagnosed_infeasibility": {
+    "extended_gauss": 637,
+    "gradient_boundary_moments": 1,
+    "total": 638
+  },
+  "llm_solver_records": 480,
+  "mechanism_prediction_records": "too sparse for a primary mechanism claim",
+  "non_llm_solver_records": 720,
+  "novelty_library_complete": false,
+  "primary_endpoint": "common external verifier pass using fixed global thresholds",
+  "primary_endpoint_is_threshold_independent_not_stricter": true,
+  "raw_llm_generations": 529,
+  "records": 1200,
+  "reference_roundoff_floor": {
+    "cells": 480,
+    "late_rate_interpretable": false,
+    "m640_error": 1.203948e-11,
+    "mixed_pde_error": 1.443815e-12
+  },
+  "refinement_audit_external": {
+    "fisher_p": 0.8404378429863986,
+    "fresh_calls": 55,
+    "fresh_passes": 25,
+    "refined_calls": 42,
+    "refined_passes": 20
+  },
+  "schedule_paired_across_archive_conditions": false,
+  "source_manifest_verified": true,
+  "source_results_sha256": "6f83b469b452121628447954c57efea51d36ed15e3c37caf2d290ec2dbcf66ec",
+  "source_secret_scan": {
+    "findings": [],
+    "passed": true
+  }
+}

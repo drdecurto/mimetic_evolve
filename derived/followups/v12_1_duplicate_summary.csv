@@ -1,0 +1,6 @@
+condition,valid_generations,unique_programs,duplicates,duplicate_rate
+cold,129,129,0,0.0
+archive_only,268,113,155,0.5783582089552238
+diagnostic_only,134,134,0,0.0
+full_feedback,185,120,65,0.35135135135135137
+two_stage,320,116,204,0.6375

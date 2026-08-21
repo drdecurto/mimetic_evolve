@@ -1,0 +1,63 @@
+{
+  "v12": {
+    "call_classifications": {
+      "provider_http_503": 1602,
+      "provider_read_timeout": 282,
+      "schema_echo_selected_by_parser": 120,
+      "success": 495,
+      "unterminated_json": 3
+    },
+    "comparison_valid": false,
+    "completed_arms": 11,
+    "declared_arms": 50,
+    "diagonal_candidate_asymptotic_rate": 5.503151098121875,
+    "diagonal_candidate_program_id": "prog_k6_diagonal_asymmetric_hybrid_5e80ffe4c774",
+    "diagonal_candidate_q_condition": 1.253265804605223,
+    "diagonal_candidate_scaled_spectral_radius": 6.165950884763394,
+    "exact_diagonal_candidates": 1,
+    "exact_promoted_candidates": 2,
+    "paired_model_role_schedule": true,
+    "provider_transport_failures": 1884,
+    "run": "v12",
+    "total_generations": 2502
+  },
+  "v12_1": {
+    "arm_distinct_normalized_programs": 612,
+    "cold_exact_asymptotic_rate": 5.372073007149884,
+    "cold_exact_program_id": "prog_k6_block_psd_asymmetric_min_next_moment_8a3f6d67a915",
+    "cold_exact_q_condition": 1.1991499046784042,
+    "cold_exact_scaled_spectral_radius": 6.2669684046862,
+    "comparison_valid": false,
+    "completed_arms": 42,
+    "declared_arms": 50,
+    "duplicates": 424,
+    "generation_success_rate": 0.9857278782112274,
+    "incomplete_arms": 8,
+    "missing_as_failure_fisher": {
+      "archive_only_vs_cold": 6.383029099324621e-05,
+      "diagnostic_only_vs_cold": 1.0,
+      "full_feedback_vs_archive_only": 0.6813606274604465,
+      "full_feedback_vs_cold": 0.0005368367175704412,
+      "two_stage_vs_cold": 0.005702011298991196
+    },
+    "missing_as_failure_rates": {
+      "archive_only": 0.35,
+      "cold": 0.125,
+      "diagnostic_only": 0.13333333333333333,
+      "full_feedback": 0.31666666666666665,
+      "two_stage": 0.275
+    },
+    "paired_model_role_schedule": false,
+    "prediction_coverage": 0.9947552447552448,
+    "predictions_supplied": 569,
+    "run": "v12.1",
+    "schedule_mismatches": 20,
+    "schema_or_parse_failures": 3,
+    "solver_records": 572,
+    "successful_generations": 1036,
+    "total_generations": 1051,
+    "transport_failures": 12,
+    "unique_normalized_program_rate_per_raw_generation": 0.582302568981922,
+    "valid_normalized_generations": 1036
+  }
+}

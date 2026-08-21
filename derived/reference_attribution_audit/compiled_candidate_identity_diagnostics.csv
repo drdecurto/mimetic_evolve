@@ -1,0 +1,5 @@
+operator_file,cells,endpoint_identity_relative_residual,scalar_norm_dirichlet_separation_residual,interior_boundary_term_relative_residual,weighted_symmetry_residual,proposition_conditions_pass
+full_metrics_prog_k6_block_psd_reflection_hybrid_46eceb97ab23_m200.npz,200,6.864023010176792e-16,0.0,0.0,1.0612306188768164e-16,True
+illumination_prog_k6_block_psd_reflection_hybrid_ec036e6713a0_m200.npz,200,2.807768567756804e-16,0.0,0.0,8.527437494769013e-17,True
+no_archive_prog_k6_block_psd_asymmetric_hybrid_f8ec01d38203_m200.npz,200,4.094099221280614e-16,0.0,0.0,1.0171862400585119e-16,True
+structure_only_prog_k6_block_psd_reflection_min_next_moment_973378905933_m200.npz,200,9.621262636945086e-16,0.0,0.0,1.2320723772556407e-16,True

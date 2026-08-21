@@ -1,0 +1,6 @@
+condition,completed_arms,declared_arms,solver_calls,generations,budget,full_budget,missing_solver_calls
+cold,10,10,120,132,12,120,0
+archive_only,7,10,107,268,12,120,13
+diagnostic_only,10,10,120,134,12,120,0
+full_feedback,9,10,114,185,12,120,6
+two_stage,6,10,111,320,12,120,9

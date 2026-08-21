@@ -1,0 +1,5 @@
+order,reference_file,upstream_family,upstream_implementation,upstream_commit,D_left_block_max_abs_error,G_left_block_max_abs_error,source_match_pass
+2,reference_mole_k2_m200.npz,Corbino-Castillo,MOLE v1.2.0,15de866,0.0,0.0,True
+4,reference_mole_k4_m200.npz,Corbino-Castillo,MOLE v1.2.0,15de866,1.1102230246251565e-16,2.220446049250313e-16,True
+6,reference_mole_k6_m200.npz,Corbino-Castillo,MOLE v1.2.0,15de866,0.0,5.551115123125783e-17,True
+8,reference_mole_k8_m200.npz,Corbino-Castillo,MOLE v1.2.0,15de866,1.1102230246251565e-16,8.881784197001252e-16,True

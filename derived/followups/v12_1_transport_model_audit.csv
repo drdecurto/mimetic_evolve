@@ -1,0 +1,3 @@
+model_id,generations,successful_generations,transport_failures,schema_or_parse_failures,success_rate
+nvidia/Cosmos3-Super-Reasoner,1013,1013,0,0,1.0
+zai-org/GLM-5.2,38,23,12,3,0.6052631578947368

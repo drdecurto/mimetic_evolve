@@ -1,0 +1,16 @@
+{
+  "family": "corbino_castillo_k6",
+  "reference": "full citation and table/equation",
+  "target_order": 6,
+  "topology": "staggered",
+  "D_corner": [
+    [
+      0.0
+    ]
+  ],
+  "G_corner": [
+    [
+      0.0
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+archive_condition,completed,solver_calls,hard_passes,pass_rate
+cold,True,120,15,0.125
+archive_only,False,23,7,0.30434782608695654
+archive_only,True,84,35,0.4166666666666667
+diagnostic_only,True,120,16,0.13333333333333333
+full_feedback,False,6,1,0.16666666666666666
+full_feedback,True,108,37,0.3425925925925926
+two_stage,False,39,18,0.46153846153846156
+two_stage,True,72,15,0.20833333333333334

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or the archived experimental results, please cite this repository."
+title: "mimetic_evolve: verifier-guided discovery of exact high-order mimetic operators"
+type: software
+authors:
+  - family-names: "de Curtò"
+    given-names: "J."
+    email: "jdecurto@icai.comillas.edu"
+  - family-names: "de Zarzà"
+    given-names: "I."
+version: "1.0.0"
+date-released: "2026-08-19"
+license: "GPL-3.0-or-later"
+repository-code: "https://github.com/drdecurto/mimetic_evolve"
+abstract: >-
+  Self-contained discovery notebook, immutable live-model run archives, exact
+  rational certificates, promoted operator arrays, and independent postprocessing
+  and verification scripts for verifier-guided search over high-order mimetic
+  operator constructions.
+keywords:
+  - mimetic finite differences
+  - large language models
+  - summation by parts
+  - structure-preserving discretization
+  - exact certification

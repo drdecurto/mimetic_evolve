@@ -1,0 +1,12 @@
+operator,family,dt_over_h2,norm_available,weighted_symmetry_residual,min_eigenvalue_symmetric_part,symmetric_part_is_spd,cg_applicable,cg_iterations,cg_converged,cg_relative_residual,gmres_iterations,gmres_converged,gmres_relative_residual
+full_metrics_prog_k6_block_psd_reflection_hybrid_46eceb97ab23_m200,primary_exact,5.0,True,8.475312602616803e-17,0.0050061610292060155,True,True,51.0,True,8.539883722191515e-11,19,True,7.332863807017961e-11
+illumination_prog_k6_block_psd_reflection_hybrid_ec036e6713a0_m200,primary_exact,5.0,True,8.908903116496109e-17,0.005006124801181613,True,True,54.0,True,8.271261019881751e-11,26,True,9.1883482372777e-11
+no_archive_prog_k6_block_psd_asymmetric_hybrid_f8ec01d38203_m200,primary_exact,5.0,True,1.389298880210624e-16,0.005006166258746772,True,True,49.0,True,7.462762079346737e-11,21,True,7.729618861674303e-11
+structure_only_prog_k6_block_psd_reflection_min_next_moment_973378905933_m200,primary_exact,5.0,True,8.878516211982686e-17,0.005006162929362169,True,True,51.0,True,7.116546480058532e-11,19,True,8.14799303329606e-11
+v12_1_cold_prog_k6_block_psd_asymmetric_min_next_moment_8a3f6d67a915_m200,followup_exact,5.0,True,1.0661371334834016e-16,0.005006168472425955,True,True,41.0,True,9.217058611761561e-11,18,True,7.405435717476971e-11
+v12_1_random_prog_k6_block_psd_reflection_min_next_moment_298eeaa4221c_m200,followup_exact,5.0,True,1.132017321962604e-16,0.00500616831367221,True,True,45.0,True,8.157924523399089e-11,15,True,8.574549776912685e-11
+v12_diagonal_prog_k6_diagonal_asymmetric_hybrid_5e80ffe4c774_m200,followup_exact,5.0,True,6.485264217273282e-17,0.005006167131822022,True,True,47.0,True,9.471862588593273e-11,25,True,7.083066496403692e-11
+reference_mole_k2_m200,reference,5.0,True,0.06898019832886426,0.005006166430616735,True,False,,,,27,True,9.511937005966119e-11
+reference_mole_k4_m200,reference,5.0,True,0.14366910333797817,0.005006106268886439,True,False,,,,17,True,7.706368840297576e-11
+reference_mole_k6_m200,reference,5.0,True,0.506000920935252,0.0007035037133879347,True,False,,,,8,True,6.923789864333012e-11
+reference_mole_k8_m200,reference,5.0,True,0.8733060366796159,-0.10955981739579293,False,False,,,,3,True,2.582784007895459e-11

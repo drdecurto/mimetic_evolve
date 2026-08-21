@@ -1,0 +1,24 @@
+{
+  "all_compiled_candidates_satisfy_proposition_conditions": true,
+  "all_reference_blocks_match_upstream_source": true,
+  "audit_version": "mole_reference_attribution_v2",
+  "boundary_identity_distinction": {
+    "compiler": "The discovery compiler imposes B0 = -e_1 e_1^T + e_{m+2} e_{m+1}^T, together with E^T Q = Q_I E^T; consequently E^T B0 G E = 0.",
+    "consequence": "Non-real reference eigenvalues do not contradict the general Corbino-Castillo extended-Gauss identity. They preclude an SPD self-adjoint similarity of the Dirichlet block and show that the stricter endpoint-supported identity is absent.",
+    "reference": "The MOLE/Corbino-Castillo arrays satisfy a general mimetic identity B_CC = QD + G^T P whose boundary operator extends over closure rows."
+  },
+  "corrected_reference_label": "MOLE/Corbino-Castillo",
+  "immutable_run_note": "The archived notebook and raw result metadata retain the historical Castillo-Grone label for provenance. Authoritative manuscript and derived analyses use the corrected attribution.",
+  "source_snapshots": {
+    "README_upstream.md": "eee446d3dde2f3f41b1028e165b4e057124490e9ad3e5d624bdd66301b721ca9",
+    "UPSTREAM.md": "ea94eef9e7aea2883f296dcb12bf949714a98d5ba1259f52993e0c2e1e0759d4",
+    "divNonPeriodic.m": "1ab34d789edcc5c22c5638519b3fba103e435e51cfdc263f8d689d2488b16deb",
+    "gradNonPeriodic.m": "a48099c9c17d09460f693d6cda1cc5045a2d30941ffe994d3e889faa2c2c9881",
+    "weightsP.m": "7186a9688eee1b8d28f35929826565440486b4badc673b580ec7fa7791315a89",
+    "weightsQ.m": "f40fedcfdd1812731aceb6b4c79762bc641b30990f79ebe4249adab79cddf1ab"
+  },
+  "upstream_commit": "15de866",
+  "upstream_project": "MOLE: Mimetic Operators Library Enhanced",
+  "upstream_statement": "MOLE states that its mathematics is based on Corbino and Castillo (2020); Castillo and Grone (2003) are cited as earlier similar matrix-analysis operators.",
+  "upstream_tag": "v1.2.0"
+}

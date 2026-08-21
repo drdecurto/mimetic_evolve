@@ -1,0 +1,6 @@
+comparison,arm_a,arm_b,arm_a_passes,arm_a_full_budget,arm_b_passes,arm_b_full_budget,odds_ratio,two_sided_fisher_p
+archive_only_vs_cold,archive_only,cold,42,120,15,120,3.769230769230769,6.383029099324621e-05
+diagnostic_only_vs_cold,diagnostic_only,cold,16,120,15,120,1.0769230769230769,1.0
+full_feedback_vs_archive_only,full_feedback,archive_only,38,120,42,120,0.8606271777003485,0.6813606274604465
+full_feedback_vs_cold,full_feedback,cold,38,120,15,120,3.2439024390243905,0.0005368367175704412
+two_stage_vs_cold,two_stage,cold,33,120,15,120,2.6551724137931036,0.005702011298991196

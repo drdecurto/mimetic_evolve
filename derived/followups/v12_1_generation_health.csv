@@ -1,0 +1,2 @@
+raw_generations,schema_valid_generations,schema_valid_rate,arm_distinct_normalized_programs,arm_distinct_rate_per_raw_generation,duplicate_successful_generations,duplicate_rate_among_successful,transport_failures,schema_or_parse_failures
+1051,1036,0.9857278782112274,612,0.582302568981922,424,0.4092664092664093,12,3

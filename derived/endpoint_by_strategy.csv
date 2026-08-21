@@ -1,0 +1,8 @@
+strategy,solver_calls,notebook_hard_passes,external_passes,notebook_hard_rate,external_rate,added_by_external_reanalysis
+llm_full_metrics,120,60,66,0.5,0.55,6
+llm_illumination,120,51,64,0.425,0.5333333333333333,13
+heuristic,240,100,120,0.4166666666666667,0.5,20
+llm_structure_only,120,11,32,0.09166666666666666,0.26666666666666666,21
+surrogate,240,8,57,0.03333333333333333,0.2375,49
+llm_no_archive,120,14,20,0.11666666666666667,0.16666666666666666,6
+uniform_random,240,5,32,0.020833333333333332,0.13333333333333333,27

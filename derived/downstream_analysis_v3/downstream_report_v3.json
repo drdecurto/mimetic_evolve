@@ -1,0 +1,57 @@
+{
+  "analysis_version": "v3.2_topology_scoped_partial_novelty_screen",
+  "supersedes": "the exploratory energy-growth interpretation in source_artifacts/mimetic_analysis_v2.zip; incorporates safe novelty-screen fixes from source_artifacts/mimetic_analysis_v3.zip",
+  "operators_analysed": 11,
+  "headline_candidate": "structure_only_prog_k6_block_psd_reflection_min_next_moment_973378905933_m200",
+  "headline_reference": "reference_mole_k6_m200",
+  "candidate_h2_max_relative_q_energy_rate": -0.0004934802200708206,
+  "reference_h2_max_relative_q_energy_rate_native_q": 0.3280096347811609,
+  "reference_max_transient_q_energy_amplification": 1.0655591107815248,
+  "reference_tau_of_max_amplification": 0.333,
+  "direct_expm_validation_amplification": 1.065559110781526,
+  "candidate_rk4_dt_over_h2": 0.45169409647063236,
+  "reference_rk4_dt_over_h2": 0.4516938699567312,
+  "caveat": "The reference result is specific to its native positive quadrature and does not exclude another Lyapunov norm. Indefinite weights are excluded from Q-energy claims.",
+  "novelty": {
+    "screen_version": "v3.2_topology_scoped_partial",
+    "screening_methods": [
+      "corner_blocks_scale_sign_reflection",
+      "fixed_length_singular_value_fingerprint"
+    ],
+    "family_status": {
+      "corbino_castillo": "compared",
+      "castillo_grone_extensions": "outstanding",
+      "strand": "outstanding",
+      "mattsson_nordstrom": "outstanding",
+      "generalized_sbp_block_norm": "outstanding"
+    },
+    "library_families_loaded": [
+      "corbino_castillo_k2",
+      "corbino_castillo_k4",
+      "corbino_castillo_k6",
+      "corbino_castillo_k8"
+    ],
+    "documented_not_directly_comparable": {},
+    "required_families_outstanding": [
+      "castillo_grone_extensions",
+      "strand",
+      "mattsson_nordstrom",
+      "generalized_sbp_block_norm"
+    ],
+    "direct_comparison_scope": "same target order and common staggered degree-of-freedom placement",
+    "required_same_topology_families_outstanding": [
+      "castillo_grone_extensions",
+      "generalized_sbp_block_norm"
+    ],
+    "cross_topology_families_requiring_mapping": [
+      "strand",
+      "mattsson_nordstrom"
+    ],
+    "library_complete": false,
+    "all_fingerprint_distances_finite": true,
+    "any_direct_match": false,
+    "any_same_order_fingerprint_near_match": false,
+    "novelty_claim_supported": false,
+    "interpretation": "No match is found among the loaded same-topology MOLE/Corbino-Castillo references. Parameterized or compact higher-order Castillo-Grone extensions and generalized/block-norm staggered comparisons remain outstanding. Classical nodal SBP families require an explicit topology map before coefficient equivalence is meaningful; literature-level novelty is therefore not established."
+  }
+}

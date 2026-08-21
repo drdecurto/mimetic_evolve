@@ -1,0 +1,5 @@
+model_id,usable,mode,latency_s,attempt_count,schema_echo_attempts,first_error
+MiniMaxAI/MiniMax-M3,True,json_schema,0.7025769839999612,0,0,
+Qwen/Qwen3.5-397B-A17B,False,,,3,3,"ValueError: probe JSON was {'type': 'object', 'additionalProperties': False, 'required': ['ok'], 'properties': {'ok': {'type': 'boolean'}}}"
+nvidia/Cosmos3-Super-Reasoner,True,json_schema,0.2739820630000054,0,0,
+zai-org/GLM-5.2,True,json_schema,2.5659136809999836,0,0,

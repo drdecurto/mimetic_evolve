@@ -1,0 +1,4 @@
+model_id,generations,success,provider_read_timeout,provider_http_503,unterminated_json,schema_echo_selected_by_parser
+MiniMaxAI/MiniMax-M3,1870,216,52.0,1602.0,0.0,0.0
+nvidia/Cosmos3-Super-Reasoner,207,207,0.0,0.0,0.0,0.0
+zai-org/GLM-5.2,425,72,230.0,0.0,3.0,120.0

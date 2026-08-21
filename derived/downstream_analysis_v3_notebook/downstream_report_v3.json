@@ -1,0 +1,48 @@
+{
+  "analysis_version": "v3.1_corrected_with_robust_partial_novelty_screen",
+  "supersedes": "the exploratory energy-growth interpretation in source_artifacts/mimetic_analysis_v2.zip; incorporates safe novelty-screen fixes from source_artifacts/mimetic_analysis_v3.zip",
+  "operators_analysed": 11,
+  "headline_candidate": "structure_only_prog_k6_block_psd_reflection_min_next_moment_973378905933_m200",
+  "headline_reference": "reference_mole_k6_m200",
+  "candidate_h2_max_relative_q_energy_rate": -0.0004934802200708206,
+  "reference_h2_max_relative_q_energy_rate_native_q": 0.3280096347811609,
+  "reference_max_transient_q_energy_amplification": 1.0655591107815248,
+  "reference_tau_of_max_amplification": 0.333,
+  "direct_expm_validation_amplification": 1.065559110781526,
+  "candidate_rk4_dt_over_h2": 0.45169409647063236,
+  "reference_rk4_dt_over_h2": 0.4516938699567312,
+  "caveat": "The reference result is specific to its native positive quadrature and does not exclude another Lyapunov norm. Indefinite weights are excluded from Q-energy claims.",
+  "novelty": {
+    "screen_version": "v3.1_robust_partial",
+    "screening_methods": [
+      "corner_blocks_scale_sign_reflection",
+      "fixed_length_singular_value_fingerprint"
+    ],
+    "family_status": {
+      "castillo_grone": "compared",
+      "corbino_castillo": "outstanding",
+      "strand": "outstanding",
+      "mattsson_nordstrom": "outstanding",
+      "generalized_sbp_block_norm": "outstanding"
+    },
+    "library_families_loaded": [
+      "castillo_grone_k2",
+      "castillo_grone_k4",
+      "castillo_grone_k6",
+      "castillo_grone_k8"
+    ],
+    "documented_not_directly_comparable": {},
+    "required_families_outstanding": [
+      "corbino_castillo",
+      "strand",
+      "mattsson_nordstrom",
+      "generalized_sbp_block_norm"
+    ],
+    "library_complete": false,
+    "all_fingerprint_distances_finite": true,
+    "any_direct_match": false,
+    "any_same_order_fingerprint_near_match": false,
+    "novelty_claim_supported": false,
+    "interpretation": "No match is found among the loaded Castillo-Grone references. Corbino-Castillo and topology-aware SBP/block-norm comparisons remain outstanding, so literature-level novelty is not established."
+  }
+}
